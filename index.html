@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: #5ee1f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: background 0.8s ease-in-out;
+    }
+    .container{
+      background: beige;
+      padding: 12px;
+      box-shadow: rgba(0,0,0,0.3);
+      border-radius: 28px;
+      text-align: center;
+      width: 500px;
+
+    }
+    h2{
+      color: rgb(52, 12, 12);
+      font-style: bold;
+    }
+    h1{
+      color: black;
+      text-align: center;
+      margin: 20px 1px;
+    }
+    button{
+      padding: 10px 20px;
+      margin:5px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: transform 0.2s;
+      max-width: fit-content;
+    }
+    .increment{
+      color: white;
+      background: green;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .decrement{
+      color: white;
+      background: #ce5454;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .reset{
+      color: white;
+      background: rgb(118, 118, 23);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    button:hover{
+      background-color: #5e582c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Counter App</h2>
+    <h1 id="count">0</h1>
+    <button class="increment" onclick="increment()">Increment</button>
+    <button class="decrement" onclick="decrement()">Decrement</button>
+    <button class="reset" onclick="reset()">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
